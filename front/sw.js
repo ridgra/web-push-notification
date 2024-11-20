@@ -1,6 +1,4 @@
-// const API_URL = 'http://localhost:5001/web-push-demo-10a8f/us-central1';
-const API_URL = 'https://us-central1-web-push-demo-10a8f.cloudfunctions.net';
-const PUSH_PUBLIC_KEY = 'BGqPBzC1N2t_6J4TNPdHkHVWzF9a8JAvkdiBdU6pKjwtSbcfQYQlEHSgbLh95eeDU1x2ggVBC0xmA_e4kTqa-uk'
+import { API_URL, PUSH_PUBLIC_KEY } from '../env';
 
 const urlBase64ToUint8Array = (base64String) => {
   const padding = '='.repeat((4 - (base64String.length % 4)) % 4);
